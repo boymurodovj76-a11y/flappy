@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #101b36, #243b55);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.game {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h1 {
+    color: #ffe66d;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 4px solid white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #0005;
+    cursor: pointer;
+    touch-action: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 20px 12px;
+    background: rgba(16, 27, 54, 0.95);
+    border: 2px solid #ffe66d;
+    border-radius: 16px;
+}
+
+#message h2 {
+    color: #ffe66d;
+    margin-bottom: 12px;
+}
+
+#message p {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 13px 18px;
+    background: #ffcc33;
+    color: #172033;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffdf70;
+}
+
+.controls {
+    margin: 12px 0 18px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #dbeafe;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 17px 8px;
+    background: #ffffff12;
+    border: 1px solid #ffffff30;
+    border-radius: 12px;
+}
+
+footer span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #9fb4d8;
+    margin-bottom: 8px;
+}
+
+footer h2 {
+    color: #ffe66d;
+    font-size: clamp(15px, 4.5vw, 21px);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 12px 8px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .scoreboard {
+        font-size: 16px;
+    }
+}
